@@ -1,0 +1,29 @@
+.black{
+  background-color: #000;
+}
+.red{
+  background-color: red;
+}
+.blue{
+  background-color: #4200FF;
+}
+.brown{
+  background-color: #7f3A00;
+}
+.orange{
+  background-color: #fd9100;
+}
+.white{
+  background-color: #fff;}
+
+ .container>[class*="col-"]
+{
+  height:50px;
+}
+
+@media screen and (max-width:767px)
+
+{.baffi .black{
+  background-color: #fd9100;}
+
+}
