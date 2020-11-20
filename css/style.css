@@ -1,48 +1,36 @@
-/* BLOCCO LEZIONI */
-#lezioni .row>.left,
-#lezioni .row>.right {
+/* regole lg */
 
+#lezioni,#steps {
+  margin-top: 25px;
+  text-align: center;
 }
 
-#lezioni .row img {
-  /* per centrare orizzontalmente */
+#lezioni h1,#steps h1 {
+margin-bottom: 40px;
+}
+#why{
+  text-align: center;
+}
+
+#steps,#why{
+  padding-top:25px;
+}
+#lezioni img {
+
   display: block;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
 }
 
-#lezioni {
-  text-align: center;
+#why .container [class*="col-"]
+  {margin-top: 20px;
 }
 
-/* BLOCCO STEPS */
-#steps .row>.left,
-#steps .row>.central
-{}
-
-#steps {
-  text-align: center;
-}
-
-/* BLOCCO PERCHE */
-#why {
-  text-align: center;
-}
-
-#why .row>.first,
-#why .row>.second,
-#why .row>.third {
-  margin-top: 80px;
-}
-
-#why .row img {
+#why img {
   background-color: #428bca;
   border-radius: 50%;
   padding: 30px;
 }
-
-/* COMMON */
-
 
 .container.grey {
   background-color: #f9f9f9;
@@ -52,8 +40,37 @@ img {
   height: 200px;
 }
 
-.clear {
-  clear: both;
+h3{
+  padding: 20px 0;
 }
 
-/* codice */
+hr{
+  margin-top:20px;
+}
+.container [class*="col-"]
+  {padding:0 20px;
+}
+
+/* md */
+
+@media screen and (max-width:991px)
+{
+  .container [class*="col-"]
+    {padding:0px 30px;
+  }
+}
+
+/* xs */
+
+@media screen and (max-width:767px)
+{
+  img {
+  height: 100px;}
+
+  #lezioni h1,#steps h1 {
+  margin-bottom: 5px;
+  }
+  .container [class*="col-"]
+    {padding:10px 10px;
+  }
+}
